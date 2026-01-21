@@ -234,7 +234,7 @@ const Hero = () => {
                 </div>
 
                 {/* Right Image Placeholder */}
-                <div className="relative group">
+                <div className="relative group overflow-hidden">
                     <div className="relative z-10 rounded-3xl overflow-hidden border-8 border-white shadow-premium aspect-[4/3] bg-brand-sky flex items-center justify-center group-hover:scale-[1.02] transition-transform duration-500">
                         <div className="text-center p-8">
                             <div className="w-24 h-24 bg-white/50 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
@@ -247,12 +247,12 @@ const Hero = () => {
                         <div className="absolute top-4 right-4 bg-primary-yellow p-3 rounded-2xl shadow-lg -rotate-12 group-hover:rotate-0 transition-transform">
                             <Heart className="text-primary-blue" fill="currentColor" />
                         </div>
-                        <div className="absolute -bottom-4 -left-4 bg-brand-green p-3 rounded-2xl shadow-lg rotate-6 group-hover:rotate-0 transition-transform">
+                        <div className="hidden sm:block absolute -bottom-4 -left-4 bg-brand-green p-3 rounded-2xl shadow-lg rotate-6 group-hover:rotate-0 transition-transform">
                             <Star className="text-white" fill="currentColor" />
                         </div>
                     </div>
                     {/* Background Shape */}
-                    <div className="absolute -inset-4 bg-brand-orange/10 -z-10 rounded-[3rem] blur-xl opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="hidden sm:block absolute -inset-4 bg-brand-orange/10 -z-10 rounded-[3rem] blur-xl opacity-60 group-hover:opacity-100 transition-opacity"></div>
                 </div>
             </div>
         </section>
@@ -1015,7 +1015,7 @@ const FloatingWhatsApp = () => {
             href="https://wa.me/917822994864?text=Hello%20SHREENIKETAN,%20I%20would%20like%20to%20enquire%20about%20admissions%20for%20my%20child."
             target="_blank"
             rel="noopener noreferrer"
-            className="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-premium hover:scale-110 transition-transform flex items-center justify-center group"
+            className="fixed bottom-6 right-4 sm:bottom-8 sm:right-8 z-50 bg-[#25D366] text-white p-3 sm:p-4 rounded-full shadow-premium hover:scale-110 transition-transform flex items-center justify-center group"
         >
             <Phone fill="currentColor" size={28} />
             <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 font-bold ml-0 group-hover:ml-3">
@@ -1133,7 +1133,7 @@ export default function App() {
     }, []);
 
     return (
-        <div className="relative selection:bg-primary-yellow selection:text-primary-blue">
+        <div className="relative selection:bg-primary-yellow selection:text-primary-blue w-full overflow-x-hidden">
             <Header />
             <main>
                 <Hero />
